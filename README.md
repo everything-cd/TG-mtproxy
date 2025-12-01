@@ -2,10 +2,11 @@
 ## 🚀 快速开始 (Quick Start)
 MTProxyTLS一键安装绿色脚本
 ```bash
-rm -rf /home/mtproxy && mkdir /home/mtproxy && cd /home/mtproxy
-curl -fsSL -o mtproxy.sh https://github.com/ellermister/mtproxy/raw/master/mtproxy.sh
-bash mtproxy.sh
+rm -rf /home/mtproxy && mkdir /home/mtproxy && cd /home
+curl -fsSL -o mtproxy.tar.gz https://raw.githubusercontent.com/everything-cd/TG-mtproxy/refs/heads/main/mtproxy.tar.gz && tar -zxvf /home/mtproxy.tar.gz -C /home && rm /home/mtproxy.tar.gz
+cd /home/mtproxy && bash mtproxy.sh reinstall
 ```
+
 
 ## 使用方式
 
@@ -39,6 +40,12 @@ bash mtproxy.sh restart
 
 ```bash
 bash mtproxy.sh reinstall
+```
+
+## 快捷保活拉起
+
+```bash
+bash /home/mtproxy/check_mtproxy.sh
 ```
 
 ## 卸载安装
